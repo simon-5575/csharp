@@ -13,7 +13,8 @@ public class StringManipulator
     /// <returns>The concatenated string.</returns>
     public string AppendStrings(string first, string second)
     {
-        throw new NotImplementedException();
+       return first + second;   
+
     }
 
     /// <summary>
@@ -58,3 +59,4 @@ public class StringManipulator
         throw new NotImplementedException();
     }
 }
+     
