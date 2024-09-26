@@ -13,7 +13,7 @@ public class BooleanLogic
     /// <returns>The result of the logical AND operation.</returns>
     public bool And(bool a, bool b)
     {
-        throw new NotImplementedException();
+        return a 
     }
 
     /// <summary>
@@ -24,7 +24,8 @@ public class BooleanLogic
     /// <returns>The result of the logical OR operation.</returns>
     public bool Or(bool a, bool b)
     {
-        throw new NotImplementedException();
+       return false;
+
     }
 
     /// <summary>
