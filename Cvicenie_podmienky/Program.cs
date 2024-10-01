@@ -10,7 +10,7 @@ namespace MyApp
         {
             Console.WriteLine("zadaj prve cislo");
             double number1 = double.Parse(Console.ReadLine());
-            Console.WriteLine("yadaj znamienko");
+            Console.WriteLine("zadaj znamienko");
             string operation = Console.ReadLine();
             
              

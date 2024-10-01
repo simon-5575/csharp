@@ -12,28 +12,51 @@ public class GameRules
     /// <param name="playerAge">The age of the player.</param>
     /// <returns>True if the player can enter the game, false otherwise.</returns>
     public bool CanPlayerEnterGame(string playerName, int playerAge)
-    {
-        throw new NotImplementedException();
-    }
+     {
+        if (playerAge <=15)
+            return false;
+         }
 
-    /// <summary>
-    /// Determines whether the game is over based on the player's health.
-    /// </summary>
-    /// <param name="playerHealth">The health of the player.</param>
-    /// <returns>True if the game is over, false otherwise.</returns>
-    public bool IsGameOver(int playerHealth)
-    {
-        throw new NotImplementedException();
-    }
+         if (playerName =="")
+         { 
+             return false;
+         }
+            if(playerName== null)
+          {
+              return false;
 
-    /// <summary>
-    /// Determines whether the secret door should be opened based on whether the player has the key and knows the password.
-    /// </summary>
-    /// <param name="hasKey">Whether the player has the key.</param>
-    /// <param name="knowsPassword">Whether the player knows the password.</param>
-    /// <returns>True if the secret door should be opened, false otherwise.</returns>
-    public bool ShouldOpenSecretDoor(bool hasKey, bool knowsPassword)
+          }
+
+           return true,
+/// <summary>
+/// Determines whether the game is over based on the player's health.
+/// </summary>
+/// <param name="playerHealth">The health of the player.</param>
+/// <returns>True if the game is over, false otherwise.</returns>
+public bool IsGameOver(int playerHealth)
     {
-        throw new NotImplementedException();
-    }
-}
+        if(playerHealth ==0)
+        {
+            return true;
+        }
+        return false;
+
+        /// <summary>
+        /// Determines whether the secret door should be opened based on whether the player has the key and knows the password.
+        /// </summary>
+        /// <param name="hasKey">Whether the player has the key.</param>
+        /// <param name="knowsPassword">Whether the player knows the password.</param>
+        /// <returns>True if the secret door should be opened, false otherwise.</returns>
+        public bool ShouldOpenSecretDoor(bool hasKey, bool knowsPassword)
+          {
+            if (hasKey==true)
+            {
+                return true;
+            }
+            return false;
+            if (knowsPassword == true)
+            { 
+                return true;
+            }
+            return false;
+        }
